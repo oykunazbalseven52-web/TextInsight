@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextInsight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TextInsight</h1>
+    <p>Analyze your text in seconds.</p>
+
+    <label for="textInput">Your text</label>
+    <textarea id="textInput" rows="8" placeholder="Enter your text here..."></textarea>
+    <button id="analyzeButton" type="button">Analyze</button>
+
+    <section id="results">
+        <h2>Results</h2>
+
+        <div class="result-grid">
+            <div class="result-card">
+                <h3>Characters</h3>
+                <span id="characterCount">0</span>
+            </div>
+
+            <div class="result-card">
+                <h3>Words</h3>
+                <span id="wordCount">0</span>
+            </div>
+
+            <div class="result-card">
+                <h3>Characters without spaces</h3>
+                <span id="characterCountWithoutSpaces">0</span>
+            </div>
+
+            <div class="result-card">
+                <h3>Sentences</h3>
+                <span id="sentenceCount">0</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
